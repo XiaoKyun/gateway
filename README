@@ -1,0 +1,31 @@
+Toy email-to-voice gateway using Mailgun and Twillio API.
+
+Target audience:
+================
+Developers who are interested in email and voice applications.
+
+
+Mailgun Setup
+=============
+* Setup an account at http://mailgun.net
+* Create a mailbox storage@yourdomain.com
+* Setup 2 routes:
+  call(.+)@yourdomain.com -> http://path-to-flask-app-com/messages/
+  call(.+)@yourdomain.com -> storage@yourdomain.com
+
+TWillio Setup
+=============
+* Setup an account http://www.twilio.com/
+* Register at least one CallerId for outbound calls
+* Replace ACCOUNT_SID and ACCOUNT_TOKEN in the code at lib/utils.py
+
+Platform Setup
+=============
+* Install python
+* Install Flask:
+> pip install Flask
+* Launch it!
+> python gateway.py
+
+--
+Mailgun Team

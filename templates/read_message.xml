@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Response>
+  <Say voice = "woman">
+    You've got new message.
+    Message from: {{ from_ }}, subject: {{ subject }}, body: {{body[:300]}}.
+  </Say>
+</Response>
